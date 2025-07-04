@@ -2,7 +2,7 @@
 
 <h5 align="center">
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2403.20309-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.02705)
+[![arXiv](https://img.shields.io/badge/Arxiv-2507.02705-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.02705)
 [![Home Page](https://img.shields.io/badge/Project-Website-green.svg)](https://insomniaaac.github.io/siu3r/)
 
 </h5>
