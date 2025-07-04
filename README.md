@@ -1,8 +1,8 @@
-<h2 align="center"> <a href="https://arxiv.org/abs/2410.18956"> SIU3R: Simultaneous Scene Understanding and 3D Reconstruction Beyond Feature Alignment
+<h2 align="center"> <a href="https://arxiv.org/abs/2507.02705"> SIU3R: Simultaneous Scene Understanding and 3D Reconstruction Beyond Feature Alignment
 
 <h5 align="center">
 
-[![arXiv](https://img.shields.io/badge/Arxiv-2403.20309-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.18956)
+[![arXiv](https://img.shields.io/badge/Arxiv-2403.20309-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2507.02705)
 [![Home Page](https://img.shields.io/badge/Project-Website-green.svg)](https://insomniaaac.github.io/siu3r/)
 
 </h5>
@@ -28,13 +28,12 @@ SIU3R is a feed-forward method that can achieve simultaneous 3D scene understand
 If you find our work useful, please consider citing our paper:
 
 ```bibtex
-@misc{wang2025styl3rinstant3dstylized,
-      title={Styl3R: Instant 3D Stylized Reconstruction for Arbitrary Scenes and Styles}, 
-      author={Peng Wang and Xiang Liu and Peidong Liu},
-      year={2025},
-      eprint={2505.21060},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2505.21060}, 
+@misc{xu2025siu3r,
+    title={SIU3R: Simultaneous Scene Understanding and 3D Reconstruction Beyond Feature Alignment},
+    author={Qi Xu and Dongxu Wei and Lingzhe Zhao and Wenpu Li and Zhangchi Huang and Shunping Ji and Peidong Liu},
+    year={2025},
+    eprint={2507.02705},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }
 ```
