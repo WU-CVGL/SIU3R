@@ -13,11 +13,7 @@ SIU3R is a feed-forward method that can achieve simultaneous 3D scene understand
 </div>
 <br>
 
-<!-- video -->
-<video controls autoplay muted loop playsinline>
-    <source src="assets/siu3r_page.mp4" type="video/mp4">
-</video>
-
+https://github.com/user-attachments/assets/95034781-75e4-4317-ab34-a9ea4ed7a644
 
 ## 🛠️ Installation
 We recommend using [uv](https://docs.astral.sh/uv/) to create a virtual environment for this project. The following instructions assume you have `uv` installed. Our code is tested with Python 3.10 and PyTorch 2.4.1 with cuda 11.8.
