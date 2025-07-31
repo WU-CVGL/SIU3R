@@ -6,8 +6,8 @@
 [![Home Page](https://img.shields.io/badge/Project-Website-green.svg)](https://insomniaaac.github.io/siu3r/)
 
 </h5>
-<h2>
-      ✨ For more stunning visualization results, dive into our [Home Page](https://insomniaaac.github.io/siu3r/)!!! ✨ 
+<h2 align="center">
+      <a href="https://insomniaaac.github.io/siu3r/"> ✨ For more stunning visualization results, dive into our Project Page!!! ✨ 
 </h2>
 <div align="center">
 
