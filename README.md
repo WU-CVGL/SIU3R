@@ -7,7 +7,7 @@
 
 </h5>
 <h2 align="center">
-      <a href="https://insomniaaac.github.io/siu3r/"> ✨ For more stunning visualization results, dive into our Project Page!!! ✨ 
+      <a href="https://insomniaaac.github.io/siu3r/" > ❗️❗️❗️For more stunning visualization results, dive into our Project Page❗️❗️❗️ 
 </h2>
 <div align="center">
 
