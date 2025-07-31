@@ -6,7 +6,11 @@
 [![Home Page](https://img.shields.io/badge/Project-Website-green.svg)](https://insomniaaac.github.io/siu3r/)
 
 </h5>
+<h2>
+      ✨ For more stunning visualization results, dive into our [Home Page](https://insomniaaac.github.io/siu3r/)!!! ✨ 
+</h2>
 <div align="center">
+
 This repository is the official implementation of the SIU3R.
 
 SIU3R is a feed-forward method that can achieve simultaneous 3D scene understanding and reconstruction given unposed images. In particular, SIU3R does not require feature alignment with 2D VFMs (e.g., CLIP, LSeg) to enable understanding, which unleashes its potential as a unified model to achieve multiple 3D understanding tasks (i.e., semantic, instance, panoptic and text-referred segmentation). Moreover, tailored designs for mutual benefits can further boost SIU3R's performance by encouraging bi-directional promotion between reconstruction and understanding.
