@@ -1,0 +1,93 @@
+defaults:
+  - hydra
+  - _self_
+
+project: siu3r
+experiment: dev
+wandb_mode: offline
+ckpt_path: null
+mode: train
+seed: 0
+ignore_warnings: true
+
+trainer:
+    max_epochs: 100
+    accelerator: gpu
+    strategy: ddp_find_unused_parameters_true
+    devices: 7
+    accumulate_grad_batches: 1
+    gradient_clip_val: 1.0
+    check_val_every_n_epoch: 100
+    log_every_n_steps: 20
+    skip_sanity_check: true
+    precision: "32"
+
+optimizer:
+    lr: 1e-4
+    warm_up_epochs: 3
+
+datamodule:
+    dataset_cfg:
+        name: scannet
+        data_dir: data/scannet
+        image_width: 256
+        image_height: 256
+        seg_task: panoptic
+        num_extra_context_views: 6
+        num_extra_target_views: 2
+        val_pair_json: val_pair_8views.json
+    train_loader_cfg:
+        batch_size: 1
+        num_workers: 64
+        pin_memory: true
+    val_loader_cfg:
+        batch_size: 6
+        num_workers: 64
+        pin_memory: true
+    test_loader_cfg:
+        batch_size: 8
+        num_workers: 64
+        pin_memory: true
+
+pipeline:
+    log_training_result_interval: 400
+    pretrained_weights_path: pretrained_weights
+    weight_seg_loss: 0.05
+    weight_depth_smoothness: 0.05
+    enable_instance_depth_smoothness: true
+    model:
+        croco:
+            enc_depth: 24
+            dec_depth: 12
+            enc_embed_dim: 1024
+            dec_embed_dim: 768
+            enc_num_heads: 16
+            dec_num_heads: 12
+            pos_embed: RoPE100
+            patch_size: 16
+            freeze: encoder
+        mask2former:
+            num_queries: 100
+            seg_threshold: 0.5
+        gaussian_head:
+            gaussian_scale_min: 0.5
+            gaussian_scale_max: 15.0
+            sh_degree: 4
+        pretrained_weights_path: pretrained_weights
+    visualizer:
+        log_colored_depth: false
+        log_rendered_video: false
+        log_gaussian_ply: false
+        save_sh_dc_only: true
+        overlay_mask_alpha: 0.5
+    evaluator:
+        eval_context_miou: true
+        eval_context_pq: true
+        eval_context_map: true
+        eval_target_miou: true
+        eval_target_pq: true
+        eval_target_map: true
+        eval_image_quality: true
+        eval_depth_quality: true
+        device: cuda
+        eval_path: null

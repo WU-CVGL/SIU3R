@@ -1,4 +1,4 @@
-<h2 align="center"> <a href="https://arxiv.org/abs/2507.02705"> SIU3R: Simultaneous Scene Understanding and 3D Reconstruction Beyond Feature Alignment
+<h2 align="center"> <a href="https://arxiv.org/abs/2507.02705"> [NeurIPS 2025 Spotlight] SIU3R: Simultaneous Scene Understanding and 3D Reconstruction Beyond Feature Alignment
 
 <h5 align="center">
 

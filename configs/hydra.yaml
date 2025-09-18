@@ -1,0 +1,16 @@
+# enable color logging
+defaults:
+    - override hydra/hydra_logging: colorlog
+    - override hydra/job_logging: colorlog
+hydra:
+    # output directory, generated dynamically on each run
+    run:
+        dir: outputs/${mode}/${experiment}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+    sweep:
+        dir: outputs/${mode}/${experiment}/${now:%Y-%m-%d}_${now:%H-%M-%S}
+        subdir: ${hydra.job.num}    
+    job_logging:
+        handlers:
+            file:
+                # Incorporates fix from https://github.com/facebookresearch/hydra/pull/2242
+                filename: ${hydra.runtime.output_dir}/${experiment}.log  
