@@ -7,7 +7,7 @@
 
 </h5>
 <h2 align="center">
-      <a href="https://insomniaaac.github.io/siu3r/" > ❗️❗️❗️For more stunning visualization results, dive into our Project Page❗️❗️❗️ 
+      <a href="https://insomniaaac.github.io/siu3r/" > For more stunning visualization results, dive into our Project Page
 </h2>
 <div align="center">
 
@@ -18,6 +18,13 @@ SIU3R is a feed-forward method that can achieve simultaneous 3D scene understand
 <br>
 
 https://github.com/user-attachments/assets/95034781-75e4-4317-ab34-a9ea4ed7a644
+
+
+## 📰 News
+- [2025-09-19] Our code is now released! 🎉
+- [2025-09-18] Our paper is accepted by NeurIPS 2025 as a Spotlight paper! 🌟
+- [2025-07-03] Our paper is available on arXiv! 🎉 [Paper](https://arxiv.org/abs/2507.02705)
+
 
 ## 🛠️ Installation
 We recommend using [uv](https://docs.astral.sh/uv/) to create a virtual environment for this project. The following instructions assume you have `uv` installed. Our code is tested with Python 3.10 and PyTorch 2.4.1 with cuda 11.8.
