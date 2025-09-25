@@ -89,6 +89,13 @@ python src/run.py experiment=siu3r_train
 ```
 This will start the training process using the configuration specified in `configs/main.yaml`. You can modify the configuration file to adjust the training parameters, such as devices, learning rate, batch size, and number of epochs.
 
+## 📐 Evaluation
+To evaluate the model, you can use the following command:
+```bash
+python src/run.py experiment=siu3r_test mode=test ckpt_path={your_ckpt_path}
+```
+This will start the evaluate process, which will load scannet validation set and generate nvs and segmentation results for pairs defined in `val_pair.json`. After that, evaluator will calculate metrics and write into json file.
+
 ## 📷 Camera Conventions
 Our camera system is the same as [pixelSplat](https://github.com/dcharatan/pixelsplat). The camera intrinsic matrices are normalized (the first row is divided by image width, and the second row is divided by image height). The camera extrinsic matrices are OpenCV-style camera-to-world matrices ( +X right, +Y down, +Z camera looks into the screen).
 
